@@ -14,20 +14,17 @@
   }
   &__user {
     background-color: $black-color;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
     overflow: hidden;
-    border-radius:1000%;
+    border-radius:50%;
     &-img {
-      width: 5.7rem;
-      height: 5.7rem;
+      width: 5rem;
+      height: 5rem;
       border-radius: 50%;
-      transition: all 0.1s;
-      transform: scale(1.02) translatex(-1.5px);
-      object-fit: cover;
+      transition: 0.1s;
       &:hover {
-        opacity: 0.75;
-        transform: scale(1.09) translateY(2px);
+        opacity: 0.98;
       }
     }
   }
@@ -39,7 +36,7 @@
   justify-content: space-between;
 
   &__toggle {
-    transition: all 0.4s;
+    transition: all 0.2s;
     display: none;
     @media (max-width: 500px) {
       display: block;
@@ -98,7 +95,7 @@
     i {
       font-size: 2rem;
       color: $text-color;
-      transition: 0.3s;
+      transition:all 0.2s;
       cursor: pointer;
 
       &:nth-child(1):hover {
