@@ -1,0 +1,122 @@
+.header {
+  background-color: $container-color;
+  box-shadow: 0 0.1rem 0.5rem rgba(#19181b, 0.3);
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+
+  &__content {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__user {
+    background-color: $black-color;
+    width: 5.5rem;
+    height: 5.5rem;
+    overflow: hidden;
+    border-radius:1000%;
+    &-img {
+      width: 5.7rem;
+      height: 5.7rem;
+      border-radius: 50%;
+      transition: all 0.1s;
+      transform: scale(1.02) translatex(-1.5px);
+      object-fit: cover;
+      &:hover {
+        opacity: 0.75;
+        transform: scale(1.09) translateY(2px);
+      }
+    }
+  }
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__toggle {
+    transition: all 0.4s;
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
+    }
+    i {
+      width: 2.3rem;
+      font-size: 2.25rem;
+      color: $text-color;
+      cursor: pointer;
+    }
+  }
+  &__logo {
+    opacity: 1;
+    flex: 0.85;
+    span {
+      margin-left: 0.7rem;
+      font-size: 1.4rem;
+      &:hover {
+        color: $first-color;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 0.5rem;
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+  &__item {
+    padding: 0.5rem;
+  }
+  &__link {
+    color: $text-color;
+    text-transform: uppercase;
+    font-size: 1.475rem;
+    font-weight: 300;
+    transition: all 0.4s;
+  }
+  &__link:hover {
+    color: $first-color;
+  }
+  &__icons {
+    display: flex;
+    flex: 1;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+
+    i {
+      font-size: 2rem;
+      color: $text-color;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:nth-child(1):hover {
+        transform: scale(1.1);
+        color: rgb(249, 0, 81);
+      }
+      &:nth-child(2):hover {
+        transform: scale(1.1);
+        color: rgb(0, 166, 234);
+      }
+      &:nth-child(3):hover {
+        transform: scale(1.1);
+        color: rgb(54, 74, 147);
+      }
+      &:nth-child(4):hover {
+        transform: scale(1.1);
+        color: rgb(21, 27, 34);
+      }
+    }
+  }
+}
