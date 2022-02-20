@@ -1,8 +1,34 @@
-.active{
+.active {
   color: $first-color;
   font-weight: 400;
 }
 
 .show-menu {
   left: 0;
+}
+
+@mixin hover-social-icons {
+  &:nth-child(1):hover {
+    transform: scale(1.15);
+    color: $istagram-color;
+  }
+  &:nth-child(2):hover {
+    transform: scale(1.15);
+    color: $twitter-color;
+  }
+  &:nth-child(3):hover {
+    transform: scale(1.15);
+    color: $facebook-color;
+  }
+  &:nth-child(4):hover {
+    transform: scale(1.15);
+    color: $github-color;
+  }
+}
+
+@mixin display-flex( $align-items, $justify-content, $gap) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
 }
