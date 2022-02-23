@@ -5,7 +5,7 @@
   height: 100vh;
   &__container {
     width: 768px;
-    margin:0 auto;
+    margin: 0 auto;
     align-self: flex-start;
     display: grid;
     column-gap: 15rem;
@@ -39,7 +39,7 @@
     justify-self: flex-end;
     font-size: 1.5rem;
     margin-top: -1rem;
-    text-align:left;
+    text-align: left;
   }
   &__photo {
     margin-top: 1rem;
@@ -64,11 +64,11 @@
       row-gap: 5rem;
     }
     &__info {
-        padding: .2rem 5rem;
-        text-align: center;
-      }
-      &__photo{
-        justify-self:center;
-      }
+      padding: 0.2rem 5rem;
+      text-align: center;
+    }
+    &__photo {
+      justify-self: center;
+    }
   }
 }

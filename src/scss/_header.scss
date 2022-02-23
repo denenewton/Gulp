@@ -9,6 +9,25 @@
   top: 0;
   left: 0;
   z-index: 2;
+  &__toggle {
+    display: none;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    right: 1rem;
+    transition: all 0.2s;
+    @media (max-width: 500px) {
+      display: flex;
+    }
+
+    i {
+      width: 2.3rem;
+      font-size: 2.25rem;
+      align-self: center;
+      color: $text-color;
+      cursor: pointer;
+    }
+  }
   @include display-flex(center, center, 0);
 
   &__content {
@@ -37,21 +56,10 @@
   width: 100%;
   @include display-flex(center, space-between, 0);
 
-  &__toggle {
-    transition: all 0.2s;
+  &__user {
     display: none;
-
-    @media (max-width: 500px) {
-      display: block;
-    }
-
-    i {
-      width: 2.3rem;
-      font-size: 2.25rem;
-      color: $text-color;
-      cursor: pointer;
-    }
   }
+
   &__logo {
     opacity: 1;
     flex: 0.85;

@@ -13,7 +13,7 @@ const showMenu = (headerToggle, navbarId) =>{
         })
     }
 }
-showMenu('nav-toggle','navbar')
+showMenu('nav-toggle','nav')
 
 /*==================== LINK ACTIVE ====================*/
 const linkColor = document.querySelectorAll('.nav__link')
@@ -34,15 +34,17 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        let sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav a[href*=' + sectionId + ']').classList.add('active')
+            document.querySelector('.nav__list  a[href*=' + sectionId + ']').classList.add('active')
+            console.log(document.querySelector('.nav__list  a[href*=' + sectionId + ']'));
         }else{
-            document.querySelector('.nav a[href*=' + sectionId + ']').classList.remove('active')
+            document.querySelector('.nav__list  a[href*=' + sectionId + ']').classList.remove('active')
         }
     })
 }
+
 window.addEventListener('scroll', scrollActive)
 
 /*===== SCROLL REVEAL ANIMATION =====*/
