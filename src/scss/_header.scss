@@ -2,9 +2,13 @@
 
 .header {
   background-color: $container-color;
-  box-shadow: 0 0.1rem 0.5rem rgba(#19181b, 0.3);
+  box-shadow: 0 0.1rem 0.5rem rgba(#19181b, 0.15);
   width: 100%;
   padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   @include display-flex(center, center, 0);
 
   &__content {
@@ -72,8 +76,8 @@
   }
   &__link {
     color: $text-color;
-    text-transform: uppercase;
-    font-size: 1.475rem;
+    text-transform: capitalize;
+    font-size: 1.7rem;
     font-weight: 300;
     transition: all 0.4s;
   }
@@ -81,7 +85,7 @@
     color: $first-color;
   }
   &__icons {
-    @include display-flex(center, flex-end, 0.25rem);
+    @include display-flex(center, flex-end, 0.27rem);
     flex: 1;
 
     @media (max-width: 500px) {
@@ -89,7 +93,7 @@
     }
 
     i {
-      font-size: 2rem;
+      font-size: 2.3rem;
       color: $text-color;
       transition: all 0.2s;
       cursor: pointer;

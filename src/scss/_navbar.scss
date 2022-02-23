@@ -9,7 +9,7 @@
   display: grid;
   width: 35rem;
   height: 100vh;
-  box-shadow: 0.1rem 0 0.5rem rgba(#19181b, 0.3);
+  box-shadow: .5rem 0 2rem rgba($black-color, 0.15);
   transition: all 0.5s ease;
 
   &__user {
@@ -18,8 +18,8 @@
     margin-bottom: 1.5rem;
 
     &-img {
-      width: 7rem;
-      height: 7rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
       
       &:hover {
@@ -31,8 +31,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 7rem;
-      height: 7rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 50%;
       background-color: hsla(0, 0%, 0%, 0.173);
       color: $container-color;
@@ -66,7 +66,7 @@
 
     & .nav__link {
       @include display-flex(center, center, 0.5rem);
-      font-size: 1.55rem !important;
+      font-size: 1.7rem !important;
       text-transform: capitalize;
 
       &:hover {
@@ -75,14 +75,14 @@
     }
 
     &-icons {
-      @include display-flex(center, center, 0.25rem);
+      @include display-flex(center, center, 0.3rem);
       position: absolute;
       bottom: 2rem;
       left: 0;
       width: 100%;
 
       i {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         color: $text-color;
         transition: 0.3s;
         cursor: pointer;

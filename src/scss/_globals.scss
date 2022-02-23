@@ -4,15 +4,13 @@
 $first-color: #6923d0;
 $second-color: #a51ce8;
 $third-color: #d31bde;
-$quad-color: #1b36de;
-$quinto-color: #361ce8;
 $first-color-light: #f4f0fa;
 $title-color: #19181b;
 $text-color: #58555e;
 $text-color-light: #a5a1aa;
 $body-color: #f9f6fd;
 $container-color: #ffffff;
-$black-color:#070707;
+$black-color:#000;
 
 $facebook-color:rgb(54, 74, 147);
 $istagram-color:rgb(249, 0, 81);
@@ -39,12 +37,24 @@ a {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 }
 
 body {
   font-family: $font-family;
-  background-color: $body-color;
+  background-color: $container-color;
   color: $text-color;
+}
+h1{
+  font-size: 7rem;
+}
+h2{
+  font-size: 6.5rem;
+}
+img{
+  width: 100%;
+  height: auto;
 }
 
 
