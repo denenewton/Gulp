@@ -64,3 +64,24 @@
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .contact {
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      &__form {
+        width: 38rem;
+        input,
+        textarea {
+          font-size: 1.4rem;
+        }
+        button {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

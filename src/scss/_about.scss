@@ -52,7 +52,6 @@
       width: 100%;
       object-fit: cover;
       border-radius: 1rem;
-      // box-shadow: 0 1px 8px rgba($black-color, 0.1);
     }
   }
 }
@@ -69,6 +68,17 @@
     }
     &__photo {
       justify-self: center;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    &__info {
+      padding: 0.5rem 3rem;
+      text-align: center;
+    }
+    &__photo {
+      width: 22rem;
     }
   }
 }

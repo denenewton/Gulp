@@ -1,8 +1,10 @@
 .home {
   display: grid;
+  column-gap: 3rem;
+  max-width: 102.4rem;
   height: 100vh;
-  padding: 0 4rem 2rem ;
-  margin: 0 5rem 5rem;
+  padding: 0 1rem;
+  margin: 0 auto;
   grid-template-columns: repeat(2, 1fr);
   font-family: inherit;
   margin-bottom: 15rem;
@@ -26,17 +28,17 @@
     letter-spacing: 1px;
     margin-top: 1rem;
   }
-  &__button{
-      display:inline-block;
-      text-align: center;
-      background-color: $first-color;
-      color: $container-color;
-      padding: 1.5rem 2rem ;
-      border-radius: 5px;
-      margin-top: 3rem;
-      font-size: 1.7rem;
-      transition: all .3s ease;
-      @include hover-button;
+  &__button {
+    display: inline-block;
+    text-align: center;
+    background-color: $first-color;
+    color: $container-color;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+    @include hover-button;
   }
   &__photo {
     align-self: center;
@@ -55,34 +57,63 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    margin: 7.5rem 0 0 1rem ;
+    margin: 7.5rem 0 0 1rem;
     grid-template-columns: 1fr;
     &__data {
-      margin-bottom: 4rem;
+      margin-bottom: -2rem;
     }
     &__name {
-        color: $first-color;
-        font-weight: 700;
+      color: $first-color;
+      font-weight: 700;
+    }
+    &__title {
+      font-size: 5rem;
+      font-weight: 700;
+    }
+    &__subtitle {
+      font-size: 4.3rem;
+      font-weight: 600;
+    }
+    &__photo {
+      align-self: flex-start;
+      justify-self: center;
+      width: 37rem;
+    }
+    &__blob {
+      fill: $first-color;
+      &-img {
+        object-fit: cover;
+        width: 48rem;
       }
-      &__title {
-        font-size: 5.5rem;
-        font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .home {
+    margin: 7.5rem 0 0 1rem;
+    grid-template-columns: 1fr;
+    &__data {
+      margin-bottom: -4rem;
+    }
+    &__name {
+      font-weight: 700;
+    }
+    &__title {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    &__subtitle {
+      font-size: 4.5rem;
+      font-weight: 600;
+    }
+    &__photo {
+      width: 30rem;
+    }
+    &__blob {
+      &-img {
+        width: 48rem;
       }
-      &__subtitle {
-        font-size: 4.5rem;
-        font-weight: 500;
-      }
-      &__photo {
-        align-self: center;
-        justify-self: center;
-        width: 40rem;
-      }
-      &__blob {
-        fill: $first-color;
-        &-img {
-          object-fit: cover;
-          width: 48rem;
-        }
-      }
+    }
   }
 }

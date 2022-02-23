@@ -87,7 +87,10 @@
     text-transform: capitalize;
     font-size: 1.7rem;
     font-weight: 300;
-    transition: all 0.4s;
+    transition: all 0.1s;
+    i{
+     display: none;
+    }
   }
   &__link:hover {
     color: $first-color;
