@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /*========== Colors ==========*/
 $first-color: #6923d0;
@@ -17,8 +17,9 @@ $istagram-color:rgb(249, 0, 81);
 $twitter-color:rgb(0, 166, 234);;
 $github-color:rgb(21, 27, 34);
 
+$margin-top: 8rem;
 /*========== Font and typography ==========*/
-$font-family: "Inter", sans-serif;
+$font-family: "Poppins", sans-serif;
 
 *,
 *::before,
@@ -41,15 +42,16 @@ html {
 
 
 body {
+  margin-top: $margin-top;
   font-family: $font-family;
   background-color: $container-color;
   color: $text-color;
 }
 h1{
-  font-size: 7rem;
+  font-size: 5rem;
 }
 h2{
-  font-size: 6.5rem;
+  font-size: 4.5rem;
 }
 img{
   width: 100%;

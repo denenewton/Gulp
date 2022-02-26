@@ -3,29 +3,27 @@
   column-gap: 3rem;
   max-width: 102.4rem;
   height: 100vh;
-  padding: 0 1rem;
   margin: 0 auto;
+  padding: 0 1rem;
   grid-template-columns: repeat(2, 1fr);
   font-family: inherit;
-  margin-bottom: 15rem;
   &__data {
     align-self: center;
     justify-self: center;
     font-family: inherit;
   }
-  &__name {
-    color: $first-color;
-    font-weight: 700;
-    letter-spacing: 1px;
+  &__name,  &__title {
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.5;
   }
-  &__title {
-    font-weight: 700;
-    letter-spacing: 1px;
+  &__name{
+    color: $first-color;
   }
   &__subtitle {
     font-size: 4.5rem;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 2px;
     margin-top: 1rem;
   }
   &__button {
@@ -33,10 +31,10 @@
     text-align: center;
     background-color: $first-color;
     color: $container-color;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: 5px;
     margin-top: 3rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
     @include hover-button;
   }
@@ -57,18 +55,16 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    margin: 7.5rem 0 0 1rem;
     grid-template-columns: 1fr;
     &__data {
       margin-bottom: -2rem;
     }
     &__name {
       color: $first-color;
-      font-weight: 700;
     }
     &__title {
       font-size: 5rem;
-      font-weight: 700;
+     
     }
     &__subtitle {
       font-size: 4.3rem;
@@ -76,7 +72,7 @@
     }
     &__photo {
       align-self: flex-start;
-      justify-self: center;
+      justify-content: center;
       width: 37rem;
     }
     &__blob {
@@ -89,26 +85,22 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .home {
-    margin: 7.5rem 0 0 1rem;
+
     grid-template-columns: 1fr;
     &__data {
-      margin-bottom: -4rem;
+      margin-bottom: -3rem;
     }
     &__name {
-      font-weight: 700;
+      font-weight: 600;
     }
-    &__title {
-      font-size: 4rem;
-      font-weight: 700;
-    }
-    &__subtitle {
-      font-size: 4.5rem;
+    &__title, &__subtitle {
+      font-size: 3.7rem;
       font-weight: 600;
     }
     &__photo {
-      width: 30rem;
+      width: 29rem;
     }
     &__blob {
       &-img {

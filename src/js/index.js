@@ -62,7 +62,6 @@ sr.reveal('.home__title, home__subtitle',{ delay: 300});
 sr.reveal(' .home__name',{ delay: 400}); 
 sr.reveal(' .home__button',{delay: 500}); 
 
-
 sr.reveal('.about__photo',{delay: 700}); 
 sr.reveal('.about__title, about__subtitle',{ delay: 300}); 
 sr.reveal('.about__info',{ delay: 400}); 
@@ -71,5 +70,5 @@ sr.reveal(' .home__button',{delay: 500});
 sr.reveal('.contact__title',{delay: 700}); 
 sr.reveal('.contact__input, about__subtitle',{ delay: 400}); 
 sr.reveal('.contact__textarea',{ delay: 500}); 
-sr.reveal(' .contact__button',{delay: 700}); 
-
+sr.reveal(' .contact__button',{delay: 100}); 
+sr.reveal('.skills__data, .skills__img, .contact__input',{interval: 200}); 
