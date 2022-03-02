@@ -26,8 +26,9 @@
         height: 8rem;
         border-radius: 50%;
         object-fit: cover;
-
+       
         &:hover {
+        
           transform: scale(1.04) translateY(1px);
         }
       }
@@ -44,11 +45,12 @@
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
         font-weight: 300;
-
+        outline-offset: .25rem;
         opacity: 0;
-        transition: 0.3s ease;
+        transition:all 0.1s ease;
         cursor: pointer;
         &:hover {
+          outline: .5rem solid $first-color;
           opacity: 1;
         }
       }
@@ -82,8 +84,8 @@
     &__icons {
       align-self: flex-end;
       justify-self: center;
-      padding-bottom: 1.5rem;
-      @include display-flex(center, flex-end, 0.27rem);
+      padding-bottom: 3rem;
+      @include display-flex(center, flex-end, 0.4rem);
       i {
         font-size: 2.3rem;
       }

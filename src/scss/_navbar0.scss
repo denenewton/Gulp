@@ -24,6 +24,7 @@
         border-radius: 50%;
 
         &:hover {
+          outline: .5rem solid $first-color;
           transform: scale(1.04) translateY(1px);
         }
       }

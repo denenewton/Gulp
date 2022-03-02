@@ -41,9 +41,12 @@
       width: 5rem;
       height: 5rem;
       border-radius: 1000rem;
-      transition: 0.1s;
+      transition:all 0.1s;
       object-fit: cover;
+      outline-offset: .25rem;
       &:hover {
+        cursor: pointer;
+        outline: 5px solid $first-color;
         opacity: 0.97;
       }
     }
