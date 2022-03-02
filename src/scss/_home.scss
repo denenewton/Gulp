@@ -12,12 +12,13 @@
     justify-self: center;
     font-family: inherit;
   }
-  &__name,  &__title {
+  &__name,
+  &__title {
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 1.5;
   }
-  &__name{
+  &__name {
     color: $first-color;
   }
   &__subtitle {
@@ -64,7 +65,6 @@
     }
     &__title {
       font-size: 5rem;
-     
     }
     &__subtitle {
       font-size: 4.3rem;
@@ -87,16 +87,15 @@
 
 @media screen and (max-width: 500px) {
   .home {
-
     grid-template-columns: 1fr;
     &__data {
       margin-bottom: -3rem;
     }
+
+    &__title,
+    &__subtitle,
     &__name {
-      font-weight: 600;
-    }
-    &__title, &__subtitle {
-      font-size: 3.7rem;
+      font-size: 4rem;
       font-weight: 600;
     }
     &__photo {

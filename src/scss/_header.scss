@@ -35,19 +35,16 @@
     height: 7rem;
     @include display-flex(center, space-between, 0);
   }
+  
   &__user {
-    background-color: $black-color;
-    width: 5rem;
-    height: 5rem;
-    overflow: hidden;
-    border-radius: 50%;
     &-img {
       width: 5rem;
       height: 5rem;
-      border-radius: 50%;
+      border-radius: 1000rem;
       transition: 0.1s;
+      object-fit: cover;
       &:hover {
-        opacity: 0.98;
+        opacity: 0.97;
       }
     }
   }
@@ -61,7 +58,7 @@
   }
 
   &__logo {
-    opacity: 1;
+    opacity: 0;
     flex: 0.85;
     span {
       margin-left: 0.7rem;

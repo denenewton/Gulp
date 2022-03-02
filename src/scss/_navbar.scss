@@ -1,4 +1,4 @@
-@import "utils";
+@import 'utils';
 @media screen and(max-width:500px) {
   .nav {
     position: fixed;
@@ -25,6 +25,7 @@
         width: 8rem;
         height: 8rem;
         border-radius: 50%;
+        object-fit: cover;
 
         &:hover {
           transform: scale(1.04) translateY(1px);
@@ -46,7 +47,7 @@
 
         opacity: 0;
         transition: 0.3s ease;
-
+        cursor: pointer;
         &:hover {
           opacity: 1;
         }
@@ -56,6 +57,7 @@
     &__logo {
       text-align: center;
       padding-right: 1rem;
+      opacity: 1;
       span {
         font-size: 1.7rem;
         &:hover {
@@ -69,11 +71,11 @@
       align-self: flex-start;
       margin-top: 2.5rem;
     }
-   
+
     &__link {
-      @include display-flex(center,flex-start, 0.35rem);
-      i{
-        display:block;
+      @include display-flex(center, flex-start, 0.35rem);
+      i {
+        display: block;
       }
     }
 
@@ -88,4 +90,3 @@
     }
   }
 }
-
